@@ -1,0 +1,132 @@
+body {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FCEBD5;
+    text-align: center;
+}
+
+.street_artist {
+    background-color: #FCEBD5;
+}
+.street_artist h1 {
+    color: #A16A5E;
+    font-size: 80px;
+}
+
+.content {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    height: 80vh;
+    background: linear-gradient(200deg, #EDD5BB 50%, #A16A5E 50%);
+}
+
+#artist {
+    color: #A16A5E;
+    top: 0;
+    left: 0;
+}
+#artist h1 {
+    font-size: 70px;
+}
+
+#visitor {
+    color: #FCEBD5;
+    bottom: 0;
+    right: 0;
+}
+#visitor h1 {
+    font-size: 70px;
+}
+
+.dropdown {
+    color: #A66656;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+.dropdown button {
+    background-color: transparent;
+    border: 2px solid #A16A5E;
+    color: #A16A5E;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 28%;
+}
+
+#artist:hover {
+    transform: translateY(10px);
+}
+#visitor:hover {
+    transform: translateY(-10px);
+}
+
+.button-div {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FCEBD5;
+    color: #A26A5E;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+@media (max-width: 768px) {
+    .street_artist h1 {
+        font-size: 50px;
+    }
+
+    .content {
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+        background: linear-gradient(180deg, #EDD5BB 50%, #A16A5E 50%);
+    }
+
+    #artist, #visitor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #artist h1, #visitor h1 {
+        font-size: 40px;
+    }
+
+    .dropdown button {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .street_artist h1 {
+        font-size: 40px;
+    }
+
+    #artist h1, #visitor h1 {
+        font-size: 30px;
+    }
+
+    .dropdown button {
+        width: 90%;
+        margin-left: 5%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}

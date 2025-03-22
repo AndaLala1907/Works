@@ -1,0 +1,224 @@
+body {
+    background-color: #FCEBD5;
+}
+
+nav {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FCEBD5;
+}
+
+nav p {
+    font-size: 60px;
+    color: #A16A5E;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #A16A5E;
+}
+
+.nav-buttons #home,
+.nav-buttons #items,
+.nav-buttons #auction {
+    margin-right: 25px;
+}
+
+#new-item {
+    padding: 50px;
+    width: 95%;
+    margin: 20px auto;
+    border: 2px dashed #A16A5E;
+    background-color: #FCEBD5;
+    color: #A16A5E;
+    text-align: center;
+}
+
+#new-item button {
+    border: none;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+#cardContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #a83e3e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #EDD5BB;
+    color: #A16A5E;
+    width: 600px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #A16A5E;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #A16A5E;
+    text-align: center;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #A16A5E;
+    background-color: #EDD5BB;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    gap: 5px;
+    background-color: #A16A5E;
+    position: absolute;
+    bottom: 0;
+}
+
+.card-buttons button {
+    flex: 1;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #EDD5BB;
+    border: none;
+}
+
+.buy-now-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    color: white;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #FCEBD5;
+    color: #A16A5E;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #E0B38D;
+}
+
+@media (max-width: 768px) {
+    #cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+}
+
+.navbar {
+    background-color: #FCEBD5;
+    font-family: 'Reenie Beanie', cursive;
+    padding: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        background-color: #ac8177;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #A16A5E;
+    }
+}
+
+.nav-link {
+    color: #A16A5E;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-collapse.show .nav-link {
+    color: #A16A5E;
+    background-color: #FCEBD5;
+}
+
+.navbar-toggler-icon {
+    background-color: #A16A5E;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-collapse.show .nav-link {
+        color: #FCEBD5;
+        background-color: #A16A5E;
+    }
+}

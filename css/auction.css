@@ -1,0 +1,204 @@
+body {
+    background-color: #FCEBD5;
+    font-family: "Reenie Beanie", cursive;
+}
+
+.navbar {
+    background-color: #FCEBD5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #A16A5E;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+h4 {
+    text-align: center;
+    color: #A16A5E;
+}
+
+#auctionItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.auction-card {
+    width: 400px;
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid #EDD5BB;
+    background-color: #a7756a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.auction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.auction-card h3 {
+    color: #5d2e23;
+    margin-top: 10px;
+}
+
+.auction-card p {
+    color: #5d2e23;
+}
+
+.auction-card .bid-btn {
+    width: 100%;
+    background-color: #ebc99f;
+    color: #a96f25;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.auction-card.featured {
+    width: 800px;
+    border-color: #F3C9A1;
+    background-color: #e9d2b4;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.auction-card.featured:hover {
+    transform: scale(1.1);
+}
+
+.auction-card.featured h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.auction-card:hover {
+    transform: scale(1.05);
+    border-color: #F3C9A1;
+}
+
+.modal-content {
+    background-color: #FCEBD5;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #A16A5E;
+    color: white;
+}
+
+.modal-body {
+    background-color: #FCEBD5;
+    color: #5d2e23;
+    font-size: 18px;
+}
+
+.modal-footer {
+    background-color: #FCEBD5;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #A16A5E;
+    color: white;
+}
+
+.modal-footer .btn-primary {
+    background-color: #e9cfb0;
+    color: #a96f25;
+}
+
+.modal-footer .btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+}
+
+.modal-dialog {
+    transform: translate(0, -50%);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    #auctionItemsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auction-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .auction-card.featured {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .auction-card img {
+        height: 150px;
+    }
+
+    .auction-card .bid-btn {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .auction-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .auction-card img {
+        height: 120px;
+    }
+
+    .auction-card h3 {
+        font-size: 20px;
+    }
+
+    .auction-card p {
+        font-size: 14px;
+    }
+}

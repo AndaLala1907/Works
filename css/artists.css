@@ -1,0 +1,211 @@
+body {
+    background-color: #FCEBD5;
+    margin: 0;
+}
+
+nav {
+    background-color: #FCEBD5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: 400;
+    font-family: "Reenie Beanie", cursive;
+}
+
+nav p {
+    font-size: 60px;
+    color: #A16A5E;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 32px;
+    color: #A16A5E;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-buttons #home,
+.nav-buttons #items,
+.nav-buttons #auction {
+    margin-right: 25px;
+}
+
+.sold-income {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+#totalItemsSold,
+#totalIncome {
+    background-color: #A16A5E;
+    padding: 60px;
+    gap: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #FCEBD5;
+    border-radius: 8px;
+    width: 45%;
+}
+
+#auctioningItem {
+    background-color: #D44C2E;
+}
+
+.chart p {
+    font-size: 30px;
+    color: #A16A5E;
+    text-align: center;
+}
+
+.time-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+#days7Button,
+#days14Button,
+#monthButton,
+#yearButton {
+    background-color: #A16A5E;
+    color: #FCEBD5;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#days7Button:hover,
+#days14Button:hover,
+#monthButton:hover,
+#yearButton:hover {
+    background-color: #D44C2E;
+}
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FCEBD5;
+    color: #A26A5E;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background-color: #FCEBD5;
+        padding: 20px;
+    }
+
+    .nav-buttons a {
+        font-size: 28px;
+        color: #A16A5E;
+        margin: 10px 0;
+    }
+
+    nav {
+        padding: 20px 10px;
+    }
+
+    .sold-income,
+    .chart {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .sold-income .col,
+    .chart p {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #totalItemsSold,
+    #totalIncome {
+        width: 100%;
+        padding: 40px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .time-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #days7Button,
+    #days14Button,
+    #monthButton,
+    #yearButton {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+.navbar {
+    background-color: #FCEBD5;
+    font-family: 'Reenie Beanie', cursive;
+    padding: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link {
+    color: #A16A5E;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-collapse.show .nav-link {
+    color: #A16A5E;
+    background-color: #FCEBD5;
+}
+
+.navbar-toggler-icon {
+    background-color: #A16A5E;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-collapse.show .nav-link {
+        color: #FCEBD5;
+        background-color: #A16A5E;
+    }
+}
+
+.auction-link {
+    cursor: pointer;
+    color: #555;
+    z-index: 1;
+}
+
+.auction-link:hover {
+    color: #000;
+}
