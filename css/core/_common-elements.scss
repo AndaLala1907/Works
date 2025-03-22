@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+html {
+  font-size: var.$font-family-base;
+}
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  // padding-top: 56px; // Offset for fixed navbar
+}
+
+h1 {
+  font-size: var.$heading-size-bigger;
+
+  @include mix.mobile-l-styles {
+    font-size: var.$heading-size-big;
+  }
+}
+// core/_common-elements.scss
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-base;
+  color: $text-color;
+  background-color: $secondary-color;
+}
+
+#navbar-container,
+#footer-container {
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+.countdown-section {
+  padding: 2em;
+  text-align: center;
+  background-color: $primary-color;
+  color: #fff;
+
+  .countdown-wrapper {
+    @include flex-center;
+
+    .countdown {
+      display: flex;
+      gap: 1em;
+
+      .countdown-item {
+        text-align: center;
+
+        .countdown-number {
+          font-size: 2em;
+          font-weight: bold;
+        }
+
+        .countdown-label {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

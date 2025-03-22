@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "registration.scss",
+    "registration.css"
+  ],
+  "names": [],
+  "mappings": "AAAQ,uFAAA;AAER;EACI,gBAAA;EACA,cAAA;EACA,iBAAA;ACAJ;;ADGA;EACI,kBAAA;EACA,mBAAA;ACAJ;;ADGA;EACI,mBAAA;ACAJ;;ADGA;EACI,kBAAA;EACA,cAAA;ACAJ;;ADGA;EACI,cAAA;EACA,uBAAA;EACA,mBAAA;ACAJ",
+  "file": "registration.css"
+}

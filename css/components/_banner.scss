@@ -1,0 +1,30 @@
+.banner {
+  background: url("../image/banner.jpg") no-repeat center center/cover;
+  height: 100vh;
+  @include flex-center;
+  text-align: center;
+
+  .banner-content {
+    color: #fff;
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin-bottom: 1em;
+    }
+
+    .btn {
+      background-color: $button-color;
+      color: #fff;
+      padding: 0.75em 1.5em;
+      text-decoration: none;
+      border-radius: 0.5em;
+
+      &:hover {
+        background-color: darken($button-color, 10%);
+      }
+    }
+  }
+}

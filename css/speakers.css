@@ -1,0 +1,25 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+.btn-primary {
+  color: #007bff;
+  background-color: white;
+  border-color: white;
+} /*# sourceMappingURL=speakers.css.map */

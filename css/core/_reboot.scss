@@ -1,0 +1,17 @@
+// core/_reboot.scss
+html {
+  box-sizing: border-box;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

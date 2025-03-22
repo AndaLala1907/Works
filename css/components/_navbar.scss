@@ -1,0 +1,95 @@
+$navbar-border-color: #ffc107;
+$navbar-brand-padding-left: 30%;
+$navbar-toggler-icon-color: rgba(0, 0, 0, 0.5);
+$nav-link-padding: 8px 16px;
+$navbar-padding-left: 30px;
+$navbar-fixed-top-z-index: 1030;
+$container-padding-top: 70px;
+$navbar-font-size: 20px;
+$navbar-padding-right-desktop: 200px;
+$navbar-padding-left-desktop: 200px;
+$navbar-brand-font-size: 30px;
+$navbar-brand-color: rgba(0, 0, 0, 0.9);
+$nav-item-margin: 0px 5px;
+$navbar-brand-font-weight: bold;
+$nav-link-hover-color: aliceblue;
+
+.navbar-toggler {
+  border: 2px solid $navbar-border-color;
+}
+
+.navbar-brand {
+  font-weight: $navbar-brand-font-weight;
+  padding-left: $navbar-brand-padding-left;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-toggler-icon-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link {
+  padding: $nav-link-padding;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding-left: $navbar-padding-left;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    padding-left: 0% !important;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $navbar-fixed-top-z-index;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-top: $container-padding-top;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    font-size: $navbar-font-size;
+    padding-right: $navbar-padding-right-desktop;
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: $navbar-padding-left-desktop;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    margin: $nav-item-margin;
+  }
+
+  .navbar-light .navbar-brand {
+    font-weight: 400;
+    font-size: $navbar-brand-font-size;
+    padding-left: 70px;
+    color: $navbar-brand-color;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: $nav-link-hover-color;
+}

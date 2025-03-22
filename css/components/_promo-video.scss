@@ -1,0 +1,13 @@
+.promo-video {
+  padding: 2em;
+  text-align: center;
+
+  .video-container {
+    @include flex-center;
+
+    iframe {
+      max-width: 100%;
+      border: none;
+    }
+  }
+}

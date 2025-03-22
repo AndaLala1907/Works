@@ -1,0 +1,80 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.mt-5,
+.my-5 {
+  margin-top: 7rem;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.map-container {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+th {
+  background-color: #353a40;
+  color: #ffffff;
+}
+
+table.table-striped thead {
+  background-color: #353a40;
+  color: white;
+}
+
+#navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.page-content {
+  padding-top: 70px;
+}
+
+.schedule-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.table {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .schedule-container {
+    overflow-x: auto;
+  }
+}

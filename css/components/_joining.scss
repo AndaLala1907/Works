@@ -1,0 +1,25 @@
+.joining {
+  padding: 2em;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .register-button {
+    background-color: $button-color;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+
+    &:hover {
+      background-color: darken($button-color, 10%);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.testimonials {
+  padding: 2em;
+
+  .container {
+    .text-center {
+      text-align: center;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+
+      .col-md-4 {
+        width: 30%;
+
+        .testimonial {
+          background-color: #fff;
+          padding: 1em;
+          border-radius: 0.5em;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+          blockquote {
+            font-size: 1em;
+            margin: 0;
+
+            .text-testimonials {
+              font-style: italic;
+              margin-bottom: 1em;
+            }
+          }
+
+          footer {
+            text-align: right;
+            font-size: 0.9em;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
