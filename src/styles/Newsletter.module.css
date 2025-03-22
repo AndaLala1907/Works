@@ -1,0 +1,18 @@
+.inputField {
+  border: none;
+  border-bottom: 1px solid #333;
+  border-radius: 0px;
+}
+
+.inputField::placeholder {
+  text-align: end;
+}
+
+.redLine {
+  position: absolute;
+  height: 3px;
+  background-color: red; /* Red line color */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
